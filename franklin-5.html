@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin Weather Page</title>
+  <meta name="description" content="This site will keep you informed about the weather.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link rel="stylesheet" href="styles/normalize.css"> <!-- normalize useragent/browser defaults -->
+  <link rel="stylesheet" href="styles/main-5.css">    <!-- default styles - small/phone views -->
+  <link rel="stylesheet" href="styles/medium-5.css">  <!-- medium/tablet views -->
+  <link href="stylesheet" href="styles/large-5.css">   <!-- large/wide/desktop views --> 
+      <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+   <div class="content">
+  <header>
+    <div class="subheading"> <img class="logo" src="images/logo.png" alt="logo"> <h1>Weather Channel</h1><p> Always Be Informed!</p></div>  
+    
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+      <img class="banner" src="images/bluesky.jpg" alt="weather image">
+
+    <ul>
+    	<li><a href="#Home">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#Greenville">Greenville</a></li>
+    	<li><a href="#Springfield">Springfield</a></li>
+    	<li><a href="#Contact">Storm Center</a></li>
+    	<li><a href="#Gallery">Gallery</a></li>
+    </ul>
+      
+  </nav>
+  <main>
+      
+   <h2>Franklin Weather</h2>
+    <figure>
+    </figure>
+    <section class="weather-summary">
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+        <p>High: 90&deg;F</p>  
+        <p>Low: 50&deg;F</p>  
+      </div>
+      <div class="current">
+        Sunny <img src="images/sun.jpg" alt="Hot" width="120px" class="weatherLogo" height="100px">
+        <picture>
+            <img src="images/#" alt="">
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 49km/h</p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+        <h3 class="Days">10 Day Forecast</h3>
+        <div style="overflow-x;auto;">
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+     </div>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+      <p class="town-article">
+        <img class="article-image" src="images/sunset.jpeg" alt="Bright sky" width="500px" height="200px">
+        The year's warmth is just another piece of evidence supporting what climate scientists have said for over a decade. Put simply, the climate has lost its chill. Due to human behaviors—namely, releasing greenhouse gasses such as carbon dioxide and methane into the atmosphere—the climate is warming up, and that's leading to increasingly volatile weather.
+      </p>
+		</article>		  
+  
+  </main>
+    
+  <footer>
+      <hr 1>
+    <aside>
+      weather forecast<br>
+      57 mountain avenue<br>
+      Franklin<br>
+      (233) 274749618<br>
+    </aside>
+      <hr 2>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Channel | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+   <script src="scripts/date.js" type="text/javascript"></script>    
+<script src="scripts/currentdate.js"></script>
+    </div>
+</body>
+</html>
