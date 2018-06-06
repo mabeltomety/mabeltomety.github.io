@@ -1,0 +1,82 @@
+<<<<<<< HEAD
+@media only screen and (min-width: 37.5em) {
+    .box {
+        float: ;
+        width: ;
+    }
+    
+    nav button { display:none; 
+    }  /* hamburger button does not need to be shown in the medium on up views */
+    nav {
+        display: inline;
+    }
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: justify;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+   display: block;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    display: inline;
+    background-color: coral;
+    flex-wrap: right;
+    align-content: space-between;
+}
+nav ul li.active a {
+    background-color:lawngreen;
+}
+nav ul li a:hover {
+    background-color: orchid;
+}
+
+    section.forecast { }  /* show the 10-day forecast with the medium view and up */
+
+=======
+@media only screen and (min-width: 37.5em) {
+    .box {
+        float: ;
+        width: ;
+    }
+    
+    nav button { display:none; 
+    }  /* hamburger button does not need to be shown in the medium on up views */
+    nav {
+        display: inline;
+    }
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: justify;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+   display: block;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    display: inline;
+    background-color: coral;
+    flex-wrap: right;
+    align-content: space-between;
+}
+nav ul li.active a {
+    background-color:lawngreen;
+}
+nav ul li a:hover {
+    background-color: orchid;
+}
+
+    section.forecast { }  /* show the 10-day forecast with the medium view and up */
+
+>>>>>>> 197f5f3d2534ea0fd7c4b00fb08fd502ec024ab4
+  }
