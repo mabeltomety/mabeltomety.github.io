@@ -28,8 +28,9 @@
         </header>
 
         <!-- site navigation use placeholder references -->
-        <nav>
-            <ul>
+        <nav class="clearfix">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
                 <li><a href="#Home">Home</a></li>
                 <li class="active"><a href="#">Franklin</a></li>
                 <li><a href="#Greenville">Greenville</a></li>
@@ -102,7 +103,7 @@
 
             <article>
                 <h3>Franklin Breaks Record</h3>
-                 <img class="article-image" src="images/sunset.jpeg" alt="Bright sky">
+                 <img class="article-image" src="images/sunset.jpeg" alt="Bright sky" >
                 <p class="town-article">
                     The year's warmth is just another piece of evidence supporting what climate scientists have said for over a decade. Put simply, the climate has lost its chill. Due to human behaviors—namely, releasing greenhouse gasses such as carbon dioxide and methane into the atmosphere—the climate is warming up, and that's leading to increasingly volatile weather.
                 </p>
@@ -120,8 +121,8 @@
             <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Channel | <span id="currentdate"></span></p>
         </footer>
 
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/date.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src='js/date.js'></script>
         <script src="scripts/currentdate.js"></script>
     </div>
 </body>

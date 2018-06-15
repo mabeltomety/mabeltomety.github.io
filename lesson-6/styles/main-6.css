@@ -5,9 +5,9 @@
 
 body {
   font-size: 16px;
-  font-family: sans-serif; 
+ font-family: sans-serif; 
   background-color: antiquewhite;
-  width: 960px; 
+  width: 100%; 
   margin: 0 auto;     
 }
 
@@ -60,41 +60,59 @@ h3 {
     height: 150px;
 }
 nav {
-  display: none;  
+ 
+  background-color: aqua;
+  font-family: sans-serif;     
 }
-nav button {}
+
+nav button {
+   /* margin: .2rem 2%
+    background-color: transparent;
+    border: none;
+    font-size: 1.rem;
+    color: aqua;
+    */
+}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 1em;
-    text-align: justify;
-    margin-top: 45px;
+   /* text-align: justify;
+    margin-top: 45px; */
 }
 nav ul li {
-    display: inline;
+   /* display: inline; */
 }
 nav ul li a {
    display: block;
     color: blue;
     text-align: center;
-    padding: 20px;
+    padding: 10px 12px;
     text-decoration: none;
-    display: inline;
+    display: block;
     background-color: coral;
-    align-content: space-between;
 }
 nav ul li.active a {
     background-color:lawngreen;
+    color: darkorange;
 }
 nav ul li a:hover {
     background-color: orchid;
+}
+
+nav ul.hide {
+    display: none;
 }
 
 .image{
     
 }
 
-main {}
+main {
+    padding: 10px;
+				line-height: 1.4em;
+				font-family: 'Playfair Display', sans serif;
+}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { 
@@ -120,12 +138,15 @@ footer {
 
 .town-article {
     word-wrap: break-word;
-    width: 30em;
     text-align: justify;
     
 }
 
-.clearfix::after {
+.article-image {
+    width: 100%;
+}
+
+.clearfix:after {
     content: "";
     clear: both;
     display: table;
