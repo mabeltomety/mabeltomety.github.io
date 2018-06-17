@@ -4,8 +4,9 @@
     }
      nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 2%;
     text-align: justify;
+    align-content: center;     
 }
 nav ul li {
     display: inline;
