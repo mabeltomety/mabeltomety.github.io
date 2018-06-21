@@ -27,4 +27,31 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: orchid;   
   }
+    
+    .gallery{
+        margin: 10px 50px;
+    }
+   
+    .gallery img{
+        width: 230px;
+/*        padding: 5px;*/
+        filter:grayscale;
+    }
+    
+    .gallery img:hover{
+        filter:grayscale(0);
+        transform: scale(1.1);
+        box-shadow:  6px 6px 4px rgba(0,0,0,.3);
+    }
+    
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px,auto);
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 10px
+            
+    }
 }

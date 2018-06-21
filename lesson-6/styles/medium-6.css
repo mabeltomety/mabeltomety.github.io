@@ -13,7 +13,7 @@
     }
     nav ul li {
         display: inline;
-        float: left;
+        float: left ;
     }
     nav ul li a {
         display: block;

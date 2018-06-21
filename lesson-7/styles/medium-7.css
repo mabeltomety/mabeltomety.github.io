@@ -3,38 +3,51 @@
         float: ;
         width: ;
     }
-    
-    nav button { display:none; 
-    }  /* hamburger button does not need to be shown in the medium on up views */
+
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown in the medium on up views */
     nav {
         display: inline;
     }
     nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: justify;
-}
-nav ul li {
-    display: inline;
-}
-nav ul li a {
-   display: block;
-    color: blue;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    display: inline;
-    background-color: coral;
-    flex-wrap: right;
-    align-content: space-between;
-}
-nav ul li.active a {
-    background-color:lawngreen;
-}
-nav ul li a:hover {
-    background-color: orchid;
-}
+        list-style-type: none;
+        margin: 0;
+        text-align: justify;
+    }
+    nav ul li {
+        display: inline;
+    }
+    nav ul li a {
+        display: inline-block;
+        color: blue;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+/*        display: inline;*/
+        background-color: coral;
+/*        flex-wrap: right;*/
+        align-content: space-between;
+        flex-flow: row nowrap;
+    }
+    nav ul li.active a {
+        background-color: lawngreen;
+    }
+    nav ul li a:hover {
+        background-color: orchid;
+    }
 
-    section.forecast { }  /* show the 10-day forecast with the medium view and up */
-
-  }
+    section.forecast {}
+    /* show the 10-day forecast with the medium view and up */
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+}

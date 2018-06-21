@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   font-family: sans-serif; 
   background-color: antiquewhite;
-  width: 960px; 
+  max-width: 960px; 
   margin: 0 auto;     
 }
 
@@ -79,7 +79,7 @@ nav ul li a {
     text-align: center;
     padding: 20px;
     text-decoration: none;
-    display: inline;
+/*    display: inline;*/
     background-color: coral;
     align-content: space-between;
 }
@@ -129,4 +129,14 @@ footer {
     content: "";
     clear: both;
     display: table;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gallery img{
+    width: 100%;
+    
 }
