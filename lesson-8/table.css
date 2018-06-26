@@ -1,0 +1,22 @@
+table{
+    width: 100%;
+}
+
+thead th, tfoot th{
+    background-color: #7fb9c2;
+}
+tbody tr{
+    background-color: #e7ffed;
+}
+
+tbody{
+    width: 50%;
+}
+
+tbody tr:first-child{
+    background-color: #628ca6;
+}
+
+tbody tr:nth-child(2),tbody tr:nth-child(4),tbody tr:nth-child(6){
+    background-color: #e7f0ed;
+}
