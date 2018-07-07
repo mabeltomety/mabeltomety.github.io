@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Start Site by Paul Cheney</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <form method="get" action="thanks.html">
+            <h3>Contact Information</h3>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Full Name* <input type="text" name="name" pattern="[A-Z]+" minlength="5" required></label>
+                <label class="top">Email <input type="text" name="email"  placeholder="someone123@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder=
+"1233335678"></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+
+            <h3>Storm Information</h3>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date<input type="date" name="stormdate"</label>
+                <label class="top">Storm Type<input lists="storms" name="stormtype"></label>
+                <datalist id="storms">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+                <label class="severity">Storm Severity(1-10)<br><input type="range" id="severity" value="5" min="1" max="10" step="1" oninput="adjistRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span><br>
+                
+                <select name="region">
+                    <option>Please Select &#9662;</option>
+                    <option value="Franklin">Franklin</option>
+                    <option value="Greenville">Greenville</option>
+                    <option value="Springfield">Springfield</option>
+                </select>      
+            </label>
+                <div>Sensing DANGER?</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+                <label class="sbs"><input type="radio" name="danger" value="YES">Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="MAYBE">Maybe</label>
+                <label><input type="radio" name="danger" value="NO">No</label>
+
+
+                <div>Comments</div>
+                <label><textarea name="message" rows"10" cols="50">Further Information or Comments</textarea></label>
+        
+
+           
+            </fieldset>
+
+            <input type="submit" value="Update Storm Information" class="submitBtn">
+
+        </form>
+        </form>
+    </main>
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <!-- FOOTER HERE -->
+        <footer>
+            <aside>
+                weather forecast<br> 57 mountain avenue<br> Franklin
+                <br> (233) 274749618<br>
+            </aside>
+            
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Channel | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/windchill.js"></script>
+    </div>
+</body>
+</html>
