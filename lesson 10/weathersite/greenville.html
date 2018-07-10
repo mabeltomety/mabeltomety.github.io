@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather Page</title>
+    <meta name="description" content="This site will keep you informed about the weather.">
+    <!-- external style references in the proper cascading order -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- normalize useragent/browser defaults -->
+    <link rel="stylesheet" href="styles/main-10.css">
+    <!-- default styles - small/phone views -->
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <!-- medium/tablet views -->
+    <link rel="stylesheet" href="styles/large-10.css">
+    <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content">
+        <header class="clearfix">
+            <div class="subheading"> <img class="logo" src="images/logo.png" alt="logo">
+                <h1>Weather Channel</h1>
+                <p> Always Be Informed!</p>
+            </div>
+
+        </header>
+
+        <!-- site navigation use placeholder references -->
+       <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="franklin-10.html">Franklin</a></li>
+            <li  class="active"><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+        <main>
+
+            <h2>Greenville</h2>
+            <figure class="original">
+                <img src="/images/bluesky.jpg" alt="Bright Day" width="900px" height="500px">
+                <figcaption>Greenville</figcaption>
+            </figure>
+          <p>  Like many cities in the South, Greenville boasts hot, humid summers and very mild winters that will fairly often keep temperatures above the freezing mark.  In mid-summer it is common for the temperatures to climb well into the 90s, although the daily average temperature is closer to 80. 
+     Fall and spring are pleasant times to visit, with temperatures usually around 60-70 and lacking that heavy muggy air that one may often find in the summer. With all that humidity there will also come plenty of thunderstorms and rain showers. 
+     People visiting from colder, far north climates will be glad to see that it can get as high as 50 degrees some days and hover in the 40s during the winter, although like many other places in the South, cold weather cannot be completely ruled out.  The city averages maybe three inches of snow in January and negligible amounts the rest of the winter. So occasionally it will get cold.  
+      And despite the summertime heat, the weather is still somewhat more temperate than what one might find as they head further south into very hot summer climates like Mississippi and Southern Louisiana. Greenville is not far from the North Carolina border, located only a couple of hours away from the Smoky Mountains.</p>
+
+        </main>
+
+        <footer>
+            
+            <aside>
+                weather forecast<br> 57 mountain avenue<br> Franklin
+                <br> (233) 274749618<br>
+            </aside>
+            
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Channel | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/windchill.js"></script>
+    </div>
+</body>
+</html>

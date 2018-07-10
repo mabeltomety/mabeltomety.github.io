@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather Page</title>
+    <meta name="description" content="This site will keep you informed about the weather.">
+    <!-- external style references in the proper cascading order -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- normalize useragent/browser defaults -->
+    <link rel="stylesheet" href="styles/main-10.css">
+    <!-- default styles - small/phone views -->
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <!-- medium/tablet views -->
+    <link rel="stylesheet" href="styles/large-10.css">
+    <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content">
+        <header class="clearfix">
+            <div class="subheading"> <img class="logo" src="images/logo.png" alt="logo">
+                <h1>Weather Channel</h1>
+                <p> Always Be Informed!</p>
+            </div>
+
+        </header>
+
+        <!-- site navigation use placeholder references -->
+       <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="franklin-10.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li  class="active"><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+        <main>
+
+            <h2>Springfield</h2>
+            <figure class="original">
+                <img src="/images/humid.jpg" alt="Humid" width="900px" height="500px">
+                <figcaption>Springfield</figcaption>
+            </figure>
+          <p>Surface high pressure is centered well to the northeast of the Ozarks, but the wind direction has really helped bring in the dry air the last 24 hours. This, along with clear skies, allowed morning temperatures to dip into 60s. Today was a bit of a change. As low pressure at the surface and aloft moved in from the southeast, it brought a rather dramatic increase in humidity compared to Saturday. High temperatures were very close to average and climbed up to 90 degrees. 
+The theme for the first half of the week will be increasing temperatures and continued chance for showers and storms. Just like we saw today, we'll start off dry, and then as we heat up through the day, we'll introduce a chance for pop up showers and storms Monday and Tuesday.
+
+Upper high pressure will be north of us through about Wednesday, This will allow for a couple of "ripples" in the flow on the south side of this ridge, and support that afternoon storm chance. As the ridge expands back south this week we'll see hot and dry weather and highs will be back into the middle 90s, but probably feel closer to triple digits.</p>
+
+        </main>
+
+        <footer>
+            
+            <aside>
+                weather forecast<br> 57 mountain avenue<br> Franklin
+                <br> (233) 274749618<br>
+            </aside>
+            
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Channel | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/windchill.js"></script>
+    </div>
+</body>
+</html>

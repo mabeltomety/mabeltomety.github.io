@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather Page</title>
+    <meta name="description" content="This site will keep you informed about the weather.">
+    <!-- external style references in the proper cascading order -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- normalize useragent/browser defaults -->
+    <link rel="stylesheet" href="styles/main-10.css">
+    <!-- default styles - small/phone views -->
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <!-- medium/tablet views -->
+    <link rel="stylesheet" href="styles/large-10.css">
+    <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content">
+        <header class="clearfix">
+            <div class="subheading"> <img class="logo" src="images/logo.png" alt="logo">
+                <h1>Weather Channel</h1>
+                <p> Always Be Informed!</p>
+            </div>
+        </header>
+    </div>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="franklin-10.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="gallery">
+        <figure>
+            <a href="images/darkskies.jpg"><img src="images/darkskies.jpg" alt="Dark Skies" onclick="openImg(this);"></a>
+            <figcaption>It's the beginning of a new month. A rainy season for that matter and dark clouds covers the skies welcoming the month of rains. The general public is therefore adviced to take plan ahead in order no to get stranded during this month.</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/rainyday.jpg"><img src="images/rainyday.jpg" alt="Rainy Day" onclick="openImg(this);"></a>
+            <figcaption>The rains have started and there are going to be few showers of rain in the Eastern part of the country, likewise the Western part. The Northern and Soutern parts will experience thunderstorms with heavy downpour in the night and slight showers during the day. The genreal public is therefore adviced to prepare for stay safe.</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/saltlake.jpg"><img src="images/saltlake.jpg" alt="Snowy" onclick="openImg(this);"></a>
+            <figcaption>It's that time of the year when the temperature drops adn gets super freezy. The situation is going to be much worse as the days go by so please stay indoors if you have nothing to do outside. Drivers are also cautioned to be very careful whiles driving to avoid any situations which aren't called for.</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/sunny.jpg"><img src="images/sunny.jpg" alt="Hot" onclick="openImg(this);"></a>
+            <figcaption>In the next few days, the summer scorcher is going to be back. It is anticipated that the temprature tomorrow will rise a little above 30&deg;.</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/whiteclouds.jpg"><img src="images/whiteclouds.jpg" alt="Bright Day" onclick="openImg(this);"></a>
+            <figcaption>It's a brand new day. Face today with a smile, a heart full of gratitude and arms ready to help comfort the poor and the afflicted. Put a smile on a neighbour's face and they will appreciate you forever.</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/darkclouds.jpeg"><img src="images/darkclouds.jpeg" alt="Dark Clouds" onclick="openImg(this);"></a>
+            <figcaption>Dark clouds will cover the coastal area with few rain showers and thunderstorms.</figcaption>
+        </figure>
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="container">
+
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+        <!-- Expnad image -->
+        <img id="expandingImg" style="width: 100%">
+
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+</body>
+</html>
