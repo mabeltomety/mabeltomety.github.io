@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather Page</title>
+    <meta name="description" content="This site will keep you informed about the weather.">
+    <!-- external style references in the proper cascading order -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- normalize useragent/browser defaults -->
+    <link rel="stylesheet" href="styles/main-9.css">
+    <!-- default styles - small/phone views -->
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <!-- medium/tablet views -->
+    <link rel="stylesheet" href="styles/large-9.css">
+    <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content">
+        <header class="clearfix">
+            <div class="subheading"> <img class="logo" src="images/logo.png" alt="logo">
+                <h1>Weather Channel</h1>
+                <p> Always Be Informed!</p>
+            </div>
+
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li class="active"><a href="/lesson-8/franklin-8.html">Franklin</a></li>
+                <li><a href="#Greenville">Greenville</a></li>
+                <li><a href="#Springfield">Springfield</a></li>
+                <li><a href="/lesson-9/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson-9/gallery-9.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+
+            <form method="get" action="thanks.html">
+                <h3>Contact Information</h3>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">Full Name* <input type="text" name="name" pattern="[A-Z]+" minlength="5" required></label>
+                    <label class="top">Email <input type="text" name="email"  placeholder="someone123@gmail.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder=
+"1233335678"></label>
+                    <label class="top">Zip Code* <input type="number" name="zip" required></label>
+                </fieldset>
+
+                <h3>Storm Information</h3>
+
+                <fieldset>
+
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date<input type="date" name="stormdate"></label>
+                    <label class="top">Storm Type<input lists="storms" name="stormtype"></label>
+                    <datalist id="storms">
+                      <option value="Flash Flood">
+                      <option value="Hail">
+                      <option value="Hurricane">
+                      <option value="Thunderstorm">
+                      <option value="Tornado">
+                    </datalist>
+
+                    <label class="severity">Storm Severity(1-10)<br><input type="range" id="severity" value="5" min="1" max="10" step="1" oninput="adjistRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span><br>
+                
+                <select name="region">
+                    <option>Please Select &#9662;</option>
+                    <option value="Franklin">Franklin</option>
+                    <option value="Greenville">Greenville</option>
+                    <option value="Springfield">Springfield</option>
+                </select>      
+            </label>
+                    <div>Sensing DANGER?</div>
+                    <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+                    <label class="sbs"><input type="radio" name="danger" value="YES">Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="MAYBE">Maybe</label>
+                    <label><input type="radio" name="danger" value="NO">No</label>
+
+
+                    <div>Comments</div>
+                    <label><textarea name="message" rows="10" cols="50">Further Information or Comments</textarea></label>
+
+
+
+                </fieldset>
+
+                <input type="submit" value="Update Storm Information" class="submitBtn">
+
+            
+                </form>
+
+        </main>
+
+        <footer>
+
+            <aside>
+                weather forecast<br> 57 mountain avenue<br> Franklin
+                <br> (233) 274749618<br>
+            </aside>
+
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Channel | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/windchill.js"></script>
+    </div>
+</body>
+
+</html>
