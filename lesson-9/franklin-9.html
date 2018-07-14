@@ -28,16 +28,16 @@
         </header>
 
         <!-- site navigation use placeholder references -->
-       <nav>
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li class="active"><a href="/lesson-9/franklin-9.html">Franklin</a></li>
-            <li><a href="#Greenville">Greenville</a></li>
-            <li><a href="#Springfield">Springfield</a></li>
-            <li><a href="/lesson-9/stormcenter.html">Storm Center</a></li>
-            <li><a href="/lesson-9/gallery-9.html">Gallery</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li class="active"><a href="/lesson-9/franklin-9.html">Franklin</a></li>
+                <li><a href="#Greenville">Greenville</a></li>
+                <li><a href="#Springfield">Springfield</a></li>
+                <li><a href="/lesson-9/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson-9/gallery-9.html">Gallery</a></li>
+            </ul>
+        </nav>
         <main>
 
             <h2>Franklin Weather</h2>
@@ -61,7 +61,7 @@
                 <div class="conditions">
                     <p>Precipitation: 0%</p>
                     <p>Wind Speed: 49m/h</p>
-                    <p>Windchill: <span id= "windchill"></span></p>
+                    <p>Windchill: <span id="windchill"></span></p>
                 </div>
             </section>
 
@@ -103,22 +103,27 @@
 
             <article>
                 <h3>Franklin Breaks Record</h3>
-                 <img class="article-image" src="images/sunset.jpeg" alt="Bright sky">
+                <img class="article-image" src="images/sunset.jpeg" alt="Bright sky">
                 <p class="town-article">
                     The year's warmth is just another piece of evidence supporting what climate scientists have said for over a decade. Put simply, the climate has lost its chill. Due to human behaviors—namely, releasing greenhouse gasses such as carbon dioxide and methane into the atmosphere—the climate is warming up, and that's leading to increasingly volatile weather.
                 </p>
             </article>
-
+            
+            Current Wind Speed:<div id="wind"></div>
+            Current Temperature:<div id="temp"></div>
+            Current Weather: <div id="weather"></div>
+            High Temp: <div id="high"></div>
+            Low Temp: <div id="low"></div>
+            Current Weather Icon:<div id="09d"></div>
         </main>
 
         <footer>
-         <div id="name"></div> 
-            <div id="wind"></div>
+            <div id="name"></div>
             <aside>
                 weather forecast<br> 57 mountain avenue<br> Franklin
                 <br> (233) 274749618<br>
             </aside>
-            
+
             <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Channel | <span id="currentdate"></span></p>
         </footer>
 
