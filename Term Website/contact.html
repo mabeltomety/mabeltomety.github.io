@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountain Spoke</title>
+    <meta name="description" content="This site will keep you informed about Mountain Biking.">
+    <!-- external style references in the proper cascading order -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- normalize useragent/browser defaults -->
+    <link rel="stylesheet" href="styles/main-13.css">
+    <!-- default styles - small/phone views -->
+    <link rel="stylesheet" href="styles/medium-13.css">
+    <!-- medium/tablet views -->
+    <link rel="stylesheet" href="styles/large-13.css">
+    <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logo"><img src="images/mountain%20logo.png" alt="logo" width="300px" height="100px"><span>THE MOUNTAIN SPOKE - Everything Bicycles!</span></div>
+
+
+    <!-- site navigation use placeholder references -->
+    <nav  class="clearfix">
+         <button onclick="toggleNavMenu()">&#9776;</button>
+        <fieldset>
+    <ul id="primaryNav" class="hide"> 
+            <li><a href="lesson-13.html">Home</a></li>
+            <li ><a href="tours-page.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li   class="active"><a href="contact.html">Contact</a></li>
+        </ul></fieldset>
+    </nav>
+<h1 id="contact">We would love to hear from you!</h1>
+    <p>For further information or any assistance, kindly contact us on <b>+233 27 474 9618</b><br>Email: <b>themountainspoke.services@gmail.com</b></p>
+
+    <form method="get" action="thanks.html">
+                <h3>Send Us a Message</h3>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">Full Name* <input type="text" name="name" pattern="[A-Z]+" minlength="5" required></label>
+                    <label class="top">Email <input type="text" name="email"  placeholder="someone123@gmail.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1233335678"></label> 
+                     <div>Comments</div>
+                    <label><textarea name="message" rows="10" cols="50"></textarea></label>
+                </fieldset>
+        
+                <input type="submit" value="Submit" class="submitBtn">
+                </form>
+    <p>The map below will give you easy directions to our office in case you want to visit our showroom.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410354864!2d-111.09290618460572!3d45.67227662755623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718%2C+USA!5e0!3m2!1sen!2sgh!4v1532500450681" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+<footer>
+    <aside>
+        102 Capital Avenue<br>
+                Bozeman<br>
+         </aside>
+    <p>&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | </p>
+       
+    </footer>
+    
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+
+    </body>
+</html>

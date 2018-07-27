@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountain Spoke</title>
+    <meta name="description" content="This site will keep you informed about Mountain Biking.">
+    <!-- external style references in the proper cascading order -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- normalize useragent/browser defaults -->
+    <link rel="stylesheet" href="styles/main-13.css">
+    <!-- default styles - small/phone views -->
+    <link rel="stylesheet" href="styles/medium-13.css">
+    <!-- medium/tablet views -->
+    <link rel="stylesheet" href="styles/large-13.css">
+    <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logo"><img src="images/mountain%20logo.png" alt="logo" width="300px" height="100px"><span>THE MOUNTAIN SPOKE - Everything Bicycles!</span></div>
+
+
+    <!-- site navigation use placeholder references -->
+    <nav  class="clearfix">
+         <button onclick="toggleNavMenu()">&#9776;</button>
+        <fieldset>
+    <ul id="primaryNav" class="hide"> 
+            <li><a href="lesson-13.html">Home</a></li>
+            <li ><a href="tours-page.html">Adventure Tours</a></li>
+            <li  class="active"><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul></fieldset>
+    </nav>
+
+<p>Founded by Mike Hall in 2013, the Transcontinental Race (TCR) is an annual, self-supported, ultra-distance bikepacking race across Europe. Another edition of it comes off in FLANDERS BELGIUM this year on July 29, 2018.The time is 10:00 PM. The route is going to be 2420MI (3,895KM). Late registrations have been opened and if you are interested in participating in this year's <b>Transcontinental Race No.6,</b> kindly fill the form below:</p>
+    
+     <form method="get" action="thanks.html">
+                <h3 id="register">Please Register Below:</h3>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">Full Name* <input type="text" name="name" pattern="[A-Z]+" minlength="5" required></label>
+                    <label class="top">Email <input type="text" name="email"  placeholder="someone123@gmail.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1233335678"></label>
+                    <label class="top">Zip Code* <input type="number" name="zip" required></label>
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Further Information</legend>
+                    <label class="top">Date of Birth<input type="date" name="dateofbirth"></label>
+                    <label class="top">Country<input lists="country" name="homestate"></label>
+          
+
+                    <div>Comments</div>
+                    <label><textarea name="message" rows="10" cols="50">Special Accommodations/Comments</textarea></label>
+
+
+
+                </fieldset>
+
+                <input type="submit" value="Submit" class="submitBtn">
+
+            
+                </form>
+
+    
+<footer>
+    <aside>
+        102 Capital Avenue<br>
+                Bozeman<br>
+         </aside>
+    <p>&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | </p>
+       
+    </footer>
+    
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+
+    </body>
+</html>

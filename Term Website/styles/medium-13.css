@@ -1,0 +1,68 @@
+@media only screen and (min-width: 37.5em) {
+    .box {
+        float: ;
+        width: ;
+    }
+
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown in the medium on up views */
+    nav {
+        display: inline;
+    }
+    nav ul {
+        list-style-type: inherit;
+        overflow: hidden;
+        margin: 0px;
+        padding: 2px;
+        text-align: justify;
+    }
+    nav ul li {
+        display: inline;
+    }
+    nav ul li a {
+        display: inline-flex;
+        color: blue;
+        text-align: center;
+        padding: 16px;
+        margin: 3px;
+        text-decoration: none;
+        background-color: coral;
+        width: 100%;
+/*        flex-wrap: right;*/
+        align-content: space-between;
+        flex-flow: row nowrap;
+    }
+    nav ul li.active a {
+        background-color: lawngreen;
+    }
+    nav ul li a:hover {
+        background-color: orchid;
+    }
+    nav ul.hide {
+        display:flex;
+    }
+
+    section.forecast {}
+    /* show the 10-day forecast with the medium view and up */
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+    text-align: center;
+    margin: auto;
+    background-color: cadetblue;
+}
+footer>p {
+    color: yellow;
+}
+}

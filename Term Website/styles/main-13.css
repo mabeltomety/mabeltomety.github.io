@@ -1,0 +1,131 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: monospace sans-serif; 
+  background-color: #00FF7F;
+  max-width: 960px; 
+  margin: 0 auto;     
+}
+
+
+
+header, nav, main, footer { 
+  /*width: 960px; 
+  margin: 0 auto;*/    
+}
+
+header {
+    background-color: aquamarine;
+}
+
+}
+header h1{
+    text-align: center;
+    font-size: 30px;
+}
+ 
+header p{
+    text-align: center;
+}
+header img {
+    float: left;
+    height: 100px;
+    width: 150px;
+}
+
+.logo{
+    height: auto;
+    align-content: middle;
+}
+
+nav {
+ /* display: none;  */
+}
+nav button {}
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 2em;
+    text-align: justify;
+    margin-top: 45px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+   display: block;
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+    margin: 3px;
+    text-decoration: none;
+/*    display: inline;*/
+    background-color: coral;
+    align-content: space-between;
+    border-bottom: 1px solid black;
+}
+nav ul li.active a {
+    background-color:lawngreen;
+}
+nav ul li a:hover {
+    background-color:#FFFF00;
+    color: black;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFF00;
+}
+
+#service {
+    text-align: center;
+    
+}
+
+nav ul.hide{
+    display: none;
+}
+
+.leftcol, .rightcol { 
+	max-width: 48%;
+	flex: 1 0 15em;
+	margin: .5em;
+}
+
+section.sec {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+   /*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    background-color: cadetblue;
+}
+footer>p {
+    color: yellow;
+}
